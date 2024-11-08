@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+   <html>
+      <head>
+         <!--
+         JavaScript 7th Edition
+         Hands-on Project 
+
+         Author: Ahmed Salaudeen
+         Date:11/7/2024
+
+         Filename: Hangman
+         -->
+        <title>Movie Hangman</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="https://mitchum.blog/wp-content/uploads/2019/05/favicon.png" />
+      </head>
+      <body>
+        <main>
+          <h1>Animal Kingdom Hangman</h1>
+          <div id="gallows">
+            <img style="padding-left: 70px" id="hangmanImage" src="img/hangman0.png">
+          </div>
+          <div id="word"></div>
+          <br>
+          <div id="controls">
+            <input type="text" id="guessBox">
+            <button id="guessWordButton" class="button" onclick="guessWord( game )">Guess Word</button>
+            <button id="newGameButton" class="button" onclick="newGame();">New Game</button>
+            <br>
+            <br>
+          </div>
+          <br>
+          <div id="guesses"></div>
+        </main>   
+       <script src="hangman.js"></script>
+      </body>
+   </html>
